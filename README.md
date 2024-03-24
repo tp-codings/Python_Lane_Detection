@@ -26,9 +26,18 @@ If needed, change video and path.
 
 # Examples
 
-
 # Open Issues and Limitations
 - ROI has to be placed manually
 - it is not the best thing, but it works for this video quite fine :)
 - it struggles hard with bad lighting conditions
 - there is much room for improvement
+
+# Contact Information
+
+Feel free to reach out to me:
+
+- **Email:** [tobipaul50@gmail.com](mailto:tobipaul50@gmail.com)
+- **LinkedIn:** [Tobias Paul](https://www.linkedin.com/in/tobias-paul-657513276/)
+- **GitHub:** [@tp-codings](https://github.com/tp-codings)
+
+Looking forward to connecting with you! 😊
