@@ -10,7 +10,6 @@ This is a python implementation for a Lane Detection based on the Sliding Window
 ## Features
 - Real time Lane Detection from videos
 - Visualization
-- Offset to center visualization
 
 # Getting Started 
 ## Prerequisites
