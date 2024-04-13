@@ -1,14 +1,22 @@
 # Lane Detection with Python with Sliding Window method
 This is a python implementation for a Lane Detection based on the Sliding Window method with OpenCV. 
+
+## Project Overview
+
+| Personal Rating | Year of Development | Languages | Tools | Type of Application |
+| --- | --- | --- | --- | --- |
+| ⭐️⭐️⭐️⭐️⭐️ (5/5) | 2023 | Python | OpenCV | Tool |
+
 ## Features
 - Real time Lane Detection from videos
 - Visualization
 - Offset to center visualization
-  
 
 # Getting Started 
 ## Prerequisites
-- Python Version: 3.8
+- Tested with Pyhton 3.8 and Python 3.12
+- This application is tested in windows 10/11
+- I don't guarantee that every corner case has been taken into account. The project is part of my learning process for Python
 
 ## Installation
 1. Clone Repository
