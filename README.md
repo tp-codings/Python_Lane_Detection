@@ -38,7 +38,7 @@ If needed, change video and path in code (no argparser o.s.)
 - it is not the best thing, but it works for this video quite fine :)
 - it struggles hard with bad lighting conditions
 - there is much room for improvement
-- I implemented a offset to center visualization but forever reason, I did not push it. After cleanup, it was lost.
+- I implemented a offset to center visualization but forever reason, I did not push it. After cleanup, it was lost -> very happy me...
 
 # Contact Information
 
