@@ -26,7 +26,6 @@ cv2.createTrackbar("U - H", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("U - S", "Trackbars", 50, 255, nothing)
 cv2.createTrackbar("U - V", "Trackbars", 255, 255, nothing)
 
-## Choosing points for perspective transformation
 tl = (222, maskLineTop)
 bl = (70 ,maskLineBottom)
 tr = (400, maskLineTop)
@@ -48,17 +47,13 @@ while success:
     cv2.circle(frame, tr, 5, (0,0,255), -1)
     cv2.circle(frame, br, 5, (0,0,255), -1)
 
-    ## Applying perspective transformation
     pts1 = np.float32([tl, bl, tr, br]) 
     pts2 = np.float32([[0, 0], [0, height], [width, 0], [width, height]]) 
     
-    # Matrix to warp the image for birdseye window
     matrix = cv2.getPerspectiveTransform(pts1, pts2) 
     transformed_frame = cv2.warpPerspective(frame, matrix, (width, height))
-    # Um die inverse Matrix zu erhalten
     inverse_matrix = np.linalg.inv(matrix)
 
-    # Jetzt können Sie 'inverse_matrix' verwenden, um das Bild von der Vogelperspektive auf die Originalansicht zurückzutransformieren
     transformed_back_frame = cv2.warpPerspective(transformed_frame, inverse_matrix, (width, height))
 
     ### Object Detection
@@ -191,13 +186,11 @@ while success:
         pts_right = np.array(original_rx, np.int32).reshape((-1, 1, 2))
         cv2.polylines(frame, [pts_right], isClosed=False, color=(0, 0, 255), thickness=2)
 
-    # # Interpolation mit einem Polynom des Grad 2 (Sie können den Grad anpassen)
     # degree = 4
     # # Extrahieren Sie x- und y-Koordinaten der linken und rechten Punkte
     # lx_x, lx_y = zip(*original_lx) if len(original_lx) > 0 else ([], [])
     # rx_x, rx_y = zip(*original_rx) if len(original_rx) > 0 else ([], [])
 
-    # # Überprüfen Sie, ob genügend Punkte für die Interpolation vorhanden sind
     # if len(lx_x) > 2 and len(lx_y) > 2:
     #     lx_poly = np.polyfit(lx_y, lx_x, degree)
     #     interpolated_y = np.linspace(min(lx_y), max(lx_y), 100)
@@ -215,7 +208,6 @@ while success:
     # for point in original_rx:
     #     cv2.circle(frame, point, 5, (0, 255, 0), -1)
 
-    # # Konvertieren Sie die interpolierten Punkte in das Format für die Verwendung in cv2.polylines
     # if len(lx_x) > 2 and len(lx_y) > 2:
     #     pts_left = np.array(list(zip(interpolated_lx, interpolated_y)), np.int32).reshape((-1, 1, 2))
     #     cv2.polylines(frame, [pts_left], isClosed=False, color=(255, 0, 0), thickness=2)
