@@ -26,7 +26,7 @@ This is a python implementation for a Lane Detection based on the Sliding Window
 3. Install Dependencies 
 `pip install -r requirements.txt`
 
-# Usage
+## Usage
 `python Lane_Detection.py`
 If needed, change video and path in code (no argparser o.s.)
 
@@ -38,7 +38,7 @@ If needed, change video and path in code (no argparser o.s.)
 - it is not the best thing, but it works for this video quite fine :)
 - it struggles hard with bad lighting conditions
 - there is much room for improvement
-- I implemented a offset to center visualization but forever reason, I did not push it. After cleanup, it was lost -> very happy me...
+- I implemented a offset to center visualization but forever reason, I did not push it. After cleanup, it was lost -> yeah very happy me...
 
 # Contact Information
 
