@@ -5,7 +5,7 @@ This is a python implementation for a Lane Detection based on the Sliding Window
 
 | Personal Rating | Year of Development | Languages | Tools | Type of Application |
 | --- | --- | --- | --- | --- |
-| ⭐️⭐️⭐️⭐️⭐️ (5/5) | 2023 | Python | OpenCV | Tool |
+| ⭐️⭐️⭐️⭐️ (4/5) | 2023 | Python | OpenCV | Tool |
 
 ## Features
 - Real time Lane Detection from videos
